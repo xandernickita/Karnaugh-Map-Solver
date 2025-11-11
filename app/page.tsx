@@ -172,9 +172,11 @@ export default function KMapPage() {
                     <FaCopy />
                   </button>
                 </div>
+
                 <code className="block whitespace-pre-wrap wrap-break-word font-mono text-sm text-neutral-100">
-                  {result.expression}
+                  F = {result.expression}
                 </code>
+
               </div>
 
               <div className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-4">
@@ -206,9 +208,7 @@ export default function KMapPage() {
             </div>
           )}
         </div>
-
-        {/* Footnote */}
-        
+        {/* Footnote */}        
       </div>
        <footer className="fixed bottom-0 left-0 w-full py-3 text-center text-sm text-neutral-500 bg-neutral-950 border-t border-neutral-800">
           <div>Karnaugh Map Solver</div>
