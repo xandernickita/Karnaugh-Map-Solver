@@ -1,7 +1,7 @@
 // /app/kmap/page.tsx
 'use client';
 import React, { useMemo, useState } from 'react';
-import { FaCopy } from 'react-icons/fa';
+import { FaCopy, FaRegCopyright } from 'react-icons/fa';
 import { FaCopyright } from 'react-icons/fa';
 
 type Result = {
@@ -211,9 +211,12 @@ export default function KMapPage() {
         {/* Footnote */}        
       </div>
        <footer className="fixed bottom-0 left-0 w-full py-3 text-center text-sm text-neutral-500 bg-neutral-950 border-t border-neutral-800">
-          <div>Karnaugh Map Solver</div>
-          <div>Alexander Nickita 2025</div>
-        </footer>
+        <div>Karnaugh Map Solver</div>
+        <div className="flex justify-center items-center">
+          <FaRegCopyright className="mr-1" />
+          Alexander Nickita 2025
+        </div>
+      </footer>
     </div>
     
   );
