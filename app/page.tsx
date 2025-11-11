@@ -77,7 +77,7 @@ export default function KMapPage() {
           <form onSubmit={submit} className="space-y-5">
             {/* Number of Inputs (Dropdown) */}
             <div>
-              <label className={labelCommon}>Number of inputs</label>
+              <label className={labelCommon}>Number of inputs (A, B, C, D, E, F)</label>
               <div className="relative">
                 <select
                   value={numInputs}
@@ -108,7 +108,7 @@ export default function KMapPage() {
                 className={inputCommon}
                 autoComplete="off"
               />
-              <p className="mt-1 text-xs text-neutral-500">Only non-negative integers are accepted.</p>
+              <p className="mt-1 text-xs text-neutral-500">Ensure proper amount of minterms are used given number of inputs</p>
             </div>
 
             {/* Don't cares */}
@@ -212,7 +212,7 @@ export default function KMapPage() {
       </div>
        <footer className="fixed bottom-0 left-0 w-full py-3 text-center text-sm text-neutral-500 bg-neutral-950 border-t border-neutral-800">
           <div>Karnaugh Map Solver</div>
-          <div>Alexander Nickita </div>
+          <div>Alexander Nickita 2025</div>
         </footer>
     </div>
     
